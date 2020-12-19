@@ -1,7 +1,6 @@
 package com.company;
 import javax.swing.*;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import java.awt.*;
 
 //Remember, this is for VIEW

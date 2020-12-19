@@ -3,7 +3,6 @@ package com.company;
 import javax.swing.*;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.ImageIcon;
 import java.awt.*;
 import java.awt.event.*;
 

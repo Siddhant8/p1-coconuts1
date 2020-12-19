@@ -3,13 +3,7 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.lang.Math;
 
 public class CovidGraph extends JFrame{
