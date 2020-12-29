@@ -84,8 +84,10 @@ public class CovidGraph extends JFrame{
         double rate = Math.pow(2.72, exponent);
         System.out.println(rate);
         newCases = rate * numberOfCases;
+        int casesToday = (int)newCases;
         System.out.println(newCases);
-        caseNumbers.setText("Number of Cases:" + String.valueOf(newCases));
+        System.out.println(casesToday);
+        caseNumbers.setText("Number of Cases:" + String.valueOf(casesToday));
         if(numberOfCases > 10.0){
             state = "outdoor dining only";
             status.setText(state);
