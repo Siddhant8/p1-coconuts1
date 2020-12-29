@@ -19,6 +19,12 @@ public class CovidGraph extends JFrame{
     public int maskWearers = 0;
     public int numberOfCases = 0;
     public int numberOfDays = 0;
+    public double newCases = 0;
+    public String state = "";
+
+    //creates ArrayList of data values
+
+    public ArrayList<Double> dataSet = new ArrayList<Double>();
 
     //initializes the statics for the UI frame
     public static JTextField inputPeople = new JTextField(20);
@@ -26,7 +32,9 @@ public class CovidGraph extends JFrame{
     public static JTextField inputCases = new JTextField(20);
     public static JTextField inputDays = new JTextField(20);
     public static JButton calculate = null;
+    public static JLabel labelDayNumber = new JLabel();
     public static JLabel caseNumbers = new JLabel();
+    public static JLabel status = new JLabel();
 
     public static Container frameContainer;
 
@@ -49,12 +57,13 @@ public class CovidGraph extends JFrame{
     //finds out what day it is
     public void addDays(){
         numberOfDays = Integer.parseInt(inputDays.getText());
+        labelDayNumber.setText("Day:" + String.valueOf(numberOfDays));
         System.out.println(numberOfDays);
     }
 
     //Calculates the number of cases based off the calculus logistic growth equation
     //Uses the variable inputs
-    public void calculateTotal(){
+    public void calculateTotal() {
 
         {
             addPeople();
@@ -65,7 +74,7 @@ public class CovidGraph extends JFrame{
 
         double doubleMaskWearers = maskWearers;
         System.out.println(doubleMaskWearers);
-        double calculationProportion = doubleMaskWearers/numberOfPeople;
+        double calculationProportion = doubleMaskWearers / numberOfPeople;
         System.out.println(calculationProportion);
         System.out.println(numberOfDays);
         double doubleNumberOfDays = (double) numberOfDays;
@@ -74,8 +83,15 @@ public class CovidGraph extends JFrame{
         System.out.println(exponent);
         double rate = Math.pow(2.72, exponent);
         System.out.println(rate);
-        double newCases = rate * numberOfCases;
+        newCases = rate * numberOfCases;
         System.out.println(newCases);
+        caseNumbers.setText("Number of Cases:" + String.valueOf(newCases));
+        if(numberOfCases > 10.0){
+            state = "outdoor dining only";
+            status.setText(state);
+        }
+        dataSet.add(newCases);
+        System.out.println(dataSet);
     }
 
     void handleEnterKeyPressForInputPeople() {
@@ -176,6 +192,14 @@ public class CovidGraph extends JFrame{
 
         initiateCalculate();
         content.add(calculate);
+
+
+        content.add(labelDayNumber);
+
+
+        content.add(caseNumbers);
+
+        content.add(status);
 
         covidTracker.setVisible(true);
     }
