@@ -27,10 +27,10 @@ public class CovidGraph extends JFrame{
     public ArrayList<Double> dataSet = new ArrayList<Double>();
 
     //initializes the statics for the UI frame
-    public static JTextField inputPeople = new JTextField(20);
-    public static JTextField inputMasks = new JTextField(20);
-    public static JTextField inputCases = new JTextField(20);
-    public static JTextField inputDays = new JTextField(20);
+    public static JTextField inputPeople = new JTextField(10);
+    public static JTextField inputMasks = new JTextField(10);
+    public static JTextField inputCases = new JTextField(10);
+    public static JTextField inputDays = new JTextField(10);
     public static JButton calculate = null;
     public static JLabel labelDayNumber = new JLabel();
     public static JLabel caseNumbers = new JLabel();
@@ -166,7 +166,7 @@ public class CovidGraph extends JFrame{
     //constructor
     public CovidGraph(){
         //creates the Frame for the UI
-        JFrame covidTracker = new JFrame("Covid Tracker");
+        JFrame covidTracker = new JFrame("Simulate an exponential Covid-Case Growth calculator");
         covidTracker.setBounds(100, 100, 418, 315);
         covidTracker.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         FlowLayout flow = new FlowLayout(); // Create a layout manager
