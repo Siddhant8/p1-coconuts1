@@ -1,4 +1,4 @@
-package com.company;
+package ui;
 import javax.swing.*;
 import javax.swing.JFrame;
 import java.awt.*;

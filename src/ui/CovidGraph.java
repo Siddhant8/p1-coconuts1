@@ -1,4 +1,4 @@
-package com.company;
+package ui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -27,14 +27,18 @@ public class CovidGraph extends JFrame{
     public ArrayList<Double> dataSet = new ArrayList<Double>();
 
     //initializes the statics for the UI frame
-    public static JTextField inputPeople = new JTextField(10);
-    public static JTextField inputMasks = new JTextField(10);
-    public static JTextField inputCases = new JTextField(10);
-    public static JTextField inputDays = new JTextField(10);
+    public static JTextField inputPeople = new JTextField(5);
+    public static JTextField inputMasks = new JTextField(5);
+    public static JTextField inputCases = new JTextField(5);
+    public static JTextField inputDays = new JTextField(5);
     public static JButton calculate = null;
     public static JLabel labelDayNumber = new JLabel();
     public static JLabel caseNumbers = new JLabel();
     public static JLabel status = new JLabel();
+    public static JLabel enterPopulation = new JLabel("Enter Number of People Total:");
+    public static JLabel enterMaskWearers = new JLabel("Enter Number of People Wearing Masks:");
+    public static JLabel enterCasesSoFar = new JLabel("Enter the Initial Number of Cases:");
+    public static JLabel enterDayNumber = new JLabel("Enter the day number:");
 
     public static Container frameContainer;
 
@@ -178,17 +182,21 @@ public class CovidGraph extends JFrame{
 
         content.setLayout(flow); // Set the container layout mgr
 
+        content.add(enterPopulation);
+
         content.add(inputPeople);
         handleEnterKeyPressForInputPeople();
 
 
-
+        content.add(enterMaskWearers);
         content.add(inputMasks);
         handleEnterKeyPressForInputMasks();
 
+        content.add(enterCasesSoFar);
         content.add(inputCases);
         handleEnterKeyPressForInputCases();
 
+        content.add(enterDayNumber);
         content.add(inputDays);
         handleEnterKeyPressForInputDays();
 
@@ -212,7 +220,7 @@ public class CovidGraph extends JFrame{
         //creates new object and calls all of the methods I created
         //CovidGraph frame = new CovidGraph();
 
-        CovidGraph object = new CovidGraph();
+        ui.CovidGraph object = new ui.CovidGraph();
 
 
         //object.calculateTotal();
@@ -221,4 +229,5 @@ public class CovidGraph extends JFrame{
     }
 
 }
+
 
