@@ -24,7 +24,7 @@ public class CovidGraph extends JFrame{
 
     //creates ArrayList of data values
 
-    public ArrayList<Double> dataSet = new ArrayList<Double>();
+    public ArrayList<Integer> dataSet = new ArrayList<Integer>();
 
     //initializes the statics for the UI frame
     public static JTextField inputPeople = new JTextField(5);
@@ -95,8 +95,11 @@ public class CovidGraph extends JFrame{
         if(numberOfCases > 10.0){
             state = "outdoor dining only";
             status.setText(state);
+        }else{
+            state = "indoor dining OK";
+            status.setText(state);
         }
-        dataSet.add(newCases);
+        dataSet.add(casesToday);
         System.out.println(dataSet);
     }
 
