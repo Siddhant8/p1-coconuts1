@@ -17,7 +17,7 @@ public class MainMenu extends JFrame{
         menu.setBounds(100, 100, 418, 315);
         menu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         menu.setBackground(Color.red);
-        JButton covidButton = new JButton("Covid Tracker");
+        JButton covidButton = new JButton("Covid Calculator");
 
         //Adds actionListeners to the buttons
         covidButton.addMouseListener(new MouseAdapter(){
