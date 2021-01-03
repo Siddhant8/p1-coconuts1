@@ -12,6 +12,7 @@ import java.awt.event.KeyEvent;
 import java.util.Scanner;
 
 import java.lang.Math;
+import java.util.Random;
 
 public class CovidGraph extends JFrame{
     //initializes the variables in my calculations
@@ -21,6 +22,20 @@ public class CovidGraph extends JFrame{
     public int numberOfDays = 0;
     public double newCases = 0;
     public String state = "";
+
+    public int population = 0;
+    public int maskers = 0;
+    public int casesAlready = 0;
+    public int dayToday = 0;
+
+    public int min1 = 25;
+    public int max1= 70;
+    public int min2 = 0;
+    public int max2 = 25;
+    public int min3 = 0;
+    public int max3 = 25;
+    public int min4 = 1;
+    public int max4 = 10;
 
     //creates ArrayList of data values
 
@@ -39,8 +54,41 @@ public class CovidGraph extends JFrame{
     public static JLabel enterMaskWearers = new JLabel("Enter Number of People Wearing Masks:");
     public static JLabel enterCasesSoFar = new JLabel("Enter the Initial Number of Cases:");
     public static JLabel enterDayNumber = new JLabel("Enter the day number:");
+    public static JLabel createPeople = new JLabel();
+    public static JLabel createMaskers = new JLabel();
+    public static JLabel createCases = new JLabel();
+    public static JLabel createDays = new JLabel();
 
     public static Container frameContainer;
+
+
+    public void generatePeople(){
+        Random random = new Random();
+        population = random.nextInt(max1 - min1) + min1;
+        String stringPopulation = String.valueOf(population);
+        createPeople.setText("Number of people to enter:" + stringPopulation);
+    }
+
+    public void generateMaskWearers(){
+        Random random1 = new Random();
+        maskers = random1.nextInt(max2-min2) + min2;
+        String stringMaskers = String.valueOf(maskers);
+        createMaskers.setText("Number of maskwearers to enter:" + stringMaskers);
+    }
+
+    public void generateCases(){
+        Random random2 = new Random();
+        casesAlready = random2.nextInt(max3 - min3) + min3;
+        String stringCasesAlready = String.valueOf(casesAlready);
+        createCases.setText("Number of present cases to enter:" + stringCasesAlready);
+    }
+
+    public void generateDay(){
+        Random random3 = new Random();
+        dayToday = random3.nextInt(max4 - min4) + min4;
+        String stringDayToday = String.valueOf(dayToday);
+        createDays.setText("The day number customer needs to enter:" + stringDayToday);
+    }
 
     //Method to take an input of the number of people in the simulation
     public void addPeople(){
@@ -170,6 +218,7 @@ public class CovidGraph extends JFrame{
     }
 
 
+
     //constructor
     public CovidGraph(){
         //creates the Frame for the UI
@@ -184,6 +233,16 @@ public class CovidGraph extends JFrame{
         content.setLayout(new GridLayout(2,2,10,10));
 
         content.setLayout(flow); // Set the container layout mgr
+
+        generatePeople();
+        generateMaskWearers();
+        generateCases();
+        generateDay();
+
+        content.add(createPeople);
+        content.add(createMaskers);
+        content.add(createCases);
+        content.add(createDays);
 
         content.add(enterPopulation);
 
