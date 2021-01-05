@@ -1,4 +1,7 @@
-package ui;
+package control;
+
+import model.CovidTrackerModel;
+import ui.CovidTrackerView;
 
 public class CovidTrackerController {
     private CovidTrackerView view;
