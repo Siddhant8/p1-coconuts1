@@ -140,16 +140,17 @@ public class CovidGraph extends JFrame{
         casesToday = (int)newCases;
         System.out.println(newCases);
         System.out.println(casesToday);
-        if(casesToday > numberOfPeople){
-            caseNumbers.setText("Everyone has Covid, Shop is Closed.");
-        }else{
-            caseNumbers.setText("Number of Cases:" + String.valueOf(casesToday));
-        }
         if(10 < casesToday && casesToday <= numberOfPeople){
             state = "Outdoor dining only";
             status.setText(state);
+            caseNumbers.setText("Number of Cases:" + String.valueOf(casesToday));
         }else if(casesToday < 10){
             state = "indoor dining OK";
+            status.setText(state);
+            caseNumbers.setText("Number of Cases:" + String.valueOf(casesToday));
+        }else{
+            caseNumbers.setText("Everyone has Covid, Shop is Closed.");
+            state = "Stay At Home Order.";
             status.setText(state);
         }
         dataSet.add(casesToday);
