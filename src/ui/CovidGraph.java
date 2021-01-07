@@ -21,6 +21,7 @@ public class CovidGraph extends JFrame{
     public int numberOfCases = 0;
     public int numberOfDays = 0;
     public double newCases = 0;
+    public int casesToday;
     public String state = "";
 
     public int population = 0;
@@ -123,7 +124,7 @@ public class CovidGraph extends JFrame{
             addCases();
             addDays();
         }
-
+        
         double doubleMaskWearers = maskWearers;
         System.out.println(doubleMaskWearers);
         double calculationProportion = doubleMaskWearers / numberOfPeople;
@@ -136,14 +137,18 @@ public class CovidGraph extends JFrame{
         double rate = Math.pow(2.72, exponent);
         System.out.println(rate);
         newCases = rate * numberOfCases;
-        int casesToday = (int)newCases;
+        casesToday = (int)newCases;
         System.out.println(newCases);
         System.out.println(casesToday);
-        caseNumbers.setText("Number of Cases:" + String.valueOf(casesToday));
-        if(numberOfCases > 10.0){
-            state = "outdoor dining only";
-            status.setText(state);
+        if(casesToday > numberOfPeople){
+            caseNumbers.setText("Everyone has Covid, Shop is Closed.");
         }else{
+            caseNumbers.setText("Number of Cases:" + String.valueOf(casesToday));
+        }
+        if(10 < casesToday && casesToday <= numberOfPeople){
+            state = "Outdoor dining only";
+            status.setText(state);
+        }else if(casesToday < 10){
             state = "indoor dining OK";
             status.setText(state);
         }
