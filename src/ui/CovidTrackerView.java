@@ -25,6 +25,53 @@ public class CovidTrackerView {
     private static Container frameContainer;
 
     public CovidTrackerView(){
+        JFrame covidTracker = new JFrame("Simulate an exponential Covid-Case Growth calculator");
+        covidTracker.setBounds(100, 100, 418, 315);
+        covidTracker.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        FlowLayout flow = new FlowLayout(); // Create a layout manager
+        flow.setHgap(10);                   // Set the horizontal gap
+        flow.setVgap(10);
+        flow.setAlignment(FlowLayout.CENTER);
+        Container content = covidTracker.getContentPane(); // Get the content pane
+        content.setLayout(new GridLayout(2,2,10,10));
 
+        content.setLayout(flow); // Set the container layout mgr
+
+        content.add(createPeople);
+        content.add(createMaskers);
+        content.add(createCases);
+        content.add(createDays);
+
+        content.add(enterPopulation);
+
+        content.add(inputPeople);
+
+
+
+        content.add(enterMaskWearers);
+        content.add(inputMasks);
+
+
+        content.add(enterCasesSoFar);
+        content.add(inputCases);
+
+
+        content.add(enterDayNumber);
+        content.add(inputDays);
+
+
+        
+        content.add(calculate);
+
+
+        content.add(labelDayNumber);
+
+
+        content.add(caseNumbers);
+
+        content.add(status);
+
+        covidTracker.setVisible(true);
     }
+
 }
