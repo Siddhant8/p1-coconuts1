@@ -33,7 +33,7 @@ public class MainMenu extends JFrame{
         jukeBox.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                JukeBoxUI musicArea = new JukeBoxUI();
+                JukeBoxControl musicArea = new JukeBoxControl();
                 //Add a feature that senses if a window has already been opened so that you don't open multiple
             }
 
