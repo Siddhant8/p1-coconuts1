@@ -4,7 +4,7 @@
     <module name="p1-coconuts1" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="ui.*" />
+        <option name="PATTERN" value="model.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

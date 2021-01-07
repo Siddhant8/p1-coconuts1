@@ -73,7 +73,7 @@ public class CovidGraph extends JFrame{
         Random random1 = new Random();
         maskers = random1.nextInt(max2-min2) + min2;
         String stringMaskers = String.valueOf(maskers);
-        createMaskers.setText("Number of maskwearers to enter:" + stringMaskers);
+        createMaskers.setText("Number of mask-wearers to enter:" + stringMaskers);
     }
 
     public void generateCases(){
