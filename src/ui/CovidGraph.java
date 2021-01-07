@@ -62,28 +62,28 @@ public class CovidGraph extends JFrame{
 
     public static Container frameContainer;
 
-
+    //generates the population
     public void generatePeople(){
         Random random = new Random();
         population = random.nextInt(max1 - min1) + min1;
         String stringPopulation = String.valueOf(population);
         createPeople.setText("Number of people to enter:" + stringPopulation);
     }
-
+    //generates the number of people wearing masks.
     public void generateMaskWearers(){
         Random random1 = new Random();
         maskers = random1.nextInt(max2-min2) + min2;
         String stringMaskers = String.valueOf(maskers);
         createMaskers.setText("Number of mask-wearers to enter:" + stringMaskers);
     }
-
+    //generates the initial number of covid cases
     public void generateCases(){
         Random random2 = new Random();
         casesAlready = random2.nextInt(max3 - min3) + min3;
         String stringCasesAlready = String.valueOf(casesAlready);
         createCases.setText("Number of present cases to enter:" + stringCasesAlready);
     }
-
+    //generates what day we start at
     public void generateDay(){
         Random random3 = new Random();
         dayToday = random3.nextInt(max4 - min4) + min4;
@@ -140,6 +140,7 @@ public class CovidGraph extends JFrame{
         casesToday = (int)newCases;
         System.out.println(newCases);
         System.out.println(casesToday);
+        //sets what the status of the shop is based off the number of cases.
         if(10 < casesToday && casesToday <= numberOfPeople){
             state = "Outdoor dining only";
             status.setText(state);
@@ -157,6 +158,7 @@ public class CovidGraph extends JFrame{
         System.out.println(dataSet);
     }
 
+    //sets the text field for people
     void handleEnterKeyPressForInputPeople() {
         inputPeople.addKeyListener(new KeyAdapter() {
             @Override
@@ -169,7 +171,7 @@ public class CovidGraph extends JFrame{
 
         });
     }
-
+    //sets the text field for masks
     void handleEnterKeyPressForInputMasks() {
         inputMasks.addKeyListener(new KeyAdapter() {
             @Override
@@ -182,7 +184,7 @@ public class CovidGraph extends JFrame{
 
         });
     }
-
+    //sets the text field for cases
     void handleEnterKeyPressForInputCases() {
         inputCases.addKeyListener(new KeyAdapter() {
             @Override
@@ -196,7 +198,7 @@ public class CovidGraph extends JFrame{
         });
     }
 
-
+    //sets the text field for days
     void handleEnterKeyPressForInputDays() {
         inputDays.addKeyListener(new KeyAdapter() {
             @Override
@@ -210,7 +212,7 @@ public class CovidGraph extends JFrame{
         });
     }
 
-
+    //button to calculate the number of covid cases
     void initiateCalculate() {
         calculate = new JButton("Calculate");
         calculate.addActionListener(new ActionListener() {
@@ -225,7 +227,7 @@ public class CovidGraph extends JFrame{
 
 
 
-    //constructor
+    //constructor that creates the UI
     public CovidGraph(){
         //creates the Frame for the UI
         JFrame covidTracker = new JFrame("Simulate an exponential Covid-Case Growth calculator");
