@@ -2,6 +2,11 @@ package ui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class CovidTrackerView {
 
@@ -23,6 +28,7 @@ public class CovidTrackerView {
     private static JLabel createDays = new JLabel();
 
     private static Container frameContainer;
+
 
     public CovidTrackerView(){
         JFrame covidTracker = new JFrame("Simulate an exponential Covid-Case Growth calculator");
@@ -72,6 +78,26 @@ public class CovidTrackerView {
         content.add(status);
 
         covidTracker.setVisible(true);
+    }
+
+    public int getInputPeople(){
+        return Integer.parseInt(inputPeople.getText());
+    }
+
+    public int getInputMasks(){
+        return Integer.parseInt(inputMasks.getText());
+    }
+
+    public int getInputCases(){
+        return Integer.parseInt(inputCases.getText());
+    }
+
+    public int getInputDays(){
+        return Integer.parseInt(inputCases.getText());
+    }
+
+    public void addCalculateListener(ActionListener calcListener){
+        calculate.addActionListener(calcListener);
     }
 
 }
