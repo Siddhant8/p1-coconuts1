@@ -18,6 +18,7 @@ public class CovidGraph extends JFrame{
     //initializes the variables in my calculations
     public int numberOfPeople = 0;
     public int maskWearers = 0;
+    public int nonMaskWearers = 0;
     public int numberOfCases = 0;
     public int numberOfDays = 0;
     public double newCases = 0;
@@ -124,10 +125,11 @@ public class CovidGraph extends JFrame{
             addCases();
             addDays();
         }
-        
-        double doubleMaskWearers = maskWearers;
-        System.out.println(doubleMaskWearers);
-        double calculationProportion = doubleMaskWearers / numberOfPeople;
+
+        nonMaskWearers = numberOfPeople - maskWearers;
+        double doubleNonMaskWearers = nonMaskWearers;
+        System.out.println(nonMaskWearers);
+        double calculationProportion = doubleNonMaskWearers / numberOfPeople;
         System.out.println(calculationProportion);
         System.out.println(numberOfDays);
         double doubleNumberOfDays = (double) numberOfDays;
