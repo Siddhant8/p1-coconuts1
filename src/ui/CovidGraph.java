@@ -18,9 +18,11 @@ public class CovidGraph extends JFrame{
     //initializes the variables in my calculations
     public int numberOfPeople = 0;
     public int maskWearers = 0;
+    public int nonMaskWearers = 0;
     public int numberOfCases = 0;
     public int numberOfDays = 0;
     public double newCases = 0;
+    public int casesToday;
     public String state = "";
 
     public int population = 0;
@@ -61,28 +63,28 @@ public class CovidGraph extends JFrame{
 
     public static Container frameContainer;
 
-
+    //generates the population
     public void generatePeople(){
         Random random = new Random();
         population = random.nextInt(max1 - min1) + min1;
         String stringPopulation = String.valueOf(population);
         createPeople.setText("Number of people to enter:" + stringPopulation);
     }
-
+    //generates the number of people wearing masks.
     public void generateMaskWearers(){
         Random random1 = new Random();
         maskers = random1.nextInt(max2-min2) + min2;
         String stringMaskers = String.valueOf(maskers);
         createMaskers.setText("Number of mask-wearers to enter:" + stringMaskers);
     }
-
+    //generates the initial number of covid cases
     public void generateCases(){
         Random random2 = new Random();
         casesAlready = random2.nextInt(max3 - min3) + min3;
         String stringCasesAlready = String.valueOf(casesAlready);
         createCases.setText("Number of present cases to enter:" + stringCasesAlready);
     }
-
+    //generates what day we start at
     public void generateDay(){
         Random random3 = new Random();
         dayToday = random3.nextInt(max4 - min4) + min4;
@@ -124,9 +126,10 @@ public class CovidGraph extends JFrame{
             addDays();
         }
 
-        double doubleMaskWearers = maskWearers;
-        System.out.println(doubleMaskWearers);
-        double calculationProportion = doubleMaskWearers / numberOfPeople;
+        nonMaskWearers = numberOfPeople - maskWearers;
+        double doubleNonMaskWearers = nonMaskWearers;
+        System.out.println(nonMaskWearers);
+        double calculationProportion = doubleNonMaskWearers / numberOfPeople;
         System.out.println(calculationProportion);
         System.out.println(numberOfDays);
         double doubleNumberOfDays = (double) numberOfDays;
@@ -136,21 +139,28 @@ public class CovidGraph extends JFrame{
         double rate = Math.pow(2.72, exponent);
         System.out.println(rate);
         newCases = rate * numberOfCases;
-        int casesToday = (int)newCases;
+        casesToday = (int)newCases;
         System.out.println(newCases);
         System.out.println(casesToday);
-        caseNumbers.setText("Number of Cases:" + String.valueOf(casesToday));
-        if(numberOfCases > 10.0){
-            state = "outdoor dining only";
+        //sets what the status of the shop is based off the number of cases.
+        if(10 < casesToday && casesToday <= numberOfPeople){
+            state = "Outdoor dining only";
             status.setText(state);
-        }else{
+            caseNumbers.setText("Number of Cases:" + String.valueOf(casesToday));
+        }else if(casesToday < 10){
             state = "indoor dining OK";
+            status.setText(state);
+            caseNumbers.setText("Number of Cases:" + String.valueOf(casesToday));
+        }else{
+            caseNumbers.setText("Everyone has Covid, Shop is Closed.");
+            state = "Stay At Home Order.";
             status.setText(state);
         }
         dataSet.add(casesToday);
         System.out.println(dataSet);
     }
 
+    //sets the text field for people
     void handleEnterKeyPressForInputPeople() {
         inputPeople.addKeyListener(new KeyAdapter() {
             @Override
@@ -163,7 +173,7 @@ public class CovidGraph extends JFrame{
 
         });
     }
-
+    //sets the text field for masks
     void handleEnterKeyPressForInputMasks() {
         inputMasks.addKeyListener(new KeyAdapter() {
             @Override
@@ -176,7 +186,7 @@ public class CovidGraph extends JFrame{
 
         });
     }
-
+    //sets the text field for cases
     void handleEnterKeyPressForInputCases() {
         inputCases.addKeyListener(new KeyAdapter() {
             @Override
@@ -190,7 +200,7 @@ public class CovidGraph extends JFrame{
         });
     }
 
-
+    //sets the text field for days
     void handleEnterKeyPressForInputDays() {
         inputDays.addKeyListener(new KeyAdapter() {
             @Override
@@ -204,7 +214,7 @@ public class CovidGraph extends JFrame{
         });
     }
 
-
+    //button to calculate the number of covid cases
     void initiateCalculate() {
         calculate = new JButton("Calculate");
         calculate.addActionListener(new ActionListener() {
@@ -219,7 +229,7 @@ public class CovidGraph extends JFrame{
 
 
 
-    //constructor
+    //constructor that creates the UI
     public CovidGraph(){
         //creates the Frame for the UI
         JFrame covidTracker = new JFrame("Simulate an exponential Covid-Case Growth calculator");

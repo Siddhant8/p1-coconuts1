@@ -1,4 +1,5 @@
 package model;
+import java.lang.Math;
 
 public class CovidTrackerModel {
     private int numberOfPeople = 0;
@@ -32,6 +33,10 @@ public class CovidTrackerModel {
         newCases = 0;
         state = "";
 
+    }
+
+    public void people(int people){
+        numberOfPeople = people;
     }
 
     public int getNumberOfPeople() {
