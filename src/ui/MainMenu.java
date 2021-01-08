@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
 
 
 public class MainMenu extends JFrame{
@@ -33,7 +34,12 @@ public class MainMenu extends JFrame{
         jukeBox.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                JukeBoxControl musicArea = new JukeBoxControl();
+
+                try {
+                    JukeBoxControl musicArea = new JukeBoxControl();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
                 //Add a feature that senses if a window has already been opened so that you don't open multiple
             }
 

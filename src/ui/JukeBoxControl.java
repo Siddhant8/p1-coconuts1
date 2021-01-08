@@ -9,7 +9,7 @@ public class JukeBoxControl {
     JukeBoxUI view;
 
 
-    public JukeBoxControl() {
+    public JukeBoxControl() throws IOException {
 
         this.model = new JukeBoxModel();
         this.view = new JukeBoxUI(this);

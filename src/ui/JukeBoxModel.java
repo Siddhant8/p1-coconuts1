@@ -15,6 +15,10 @@ public class JukeBoxModel {
         youtubeUrl = url;
         System.out.println("This is the gathered URL " + youtubeUrl);
 
+        java.awt.Desktop.getDesktop().browse(java.net.URI.create(youtubeUrl));
+        //Open the youtube URL
+
+
         if (!(storedUrls.exists())) {
             System.out.println("Creating new file");
             storedUrls.createNewFile();
@@ -24,6 +28,7 @@ public class JukeBoxModel {
         typer = new BufferedWriter(new FileWriter(storedUrls, true));
         //The true is for the append boolean. By setting it to true, we'll only ever append strings to new lines
         typer.write(youtubeUrl);
+        /**ADD a control flow statement to prevent the addition of multiple URLS of the same thing**/
         typer.write("\n");
         //The above is necessary to add a line break between urls, which is critical to reading the whole.txt file
         typer.close();
