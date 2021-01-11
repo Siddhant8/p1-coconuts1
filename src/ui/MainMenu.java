@@ -1,5 +1,7 @@
 package ui;
 
+import control.CovidTrackerController;
+
 import javax.swing.*;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -47,6 +49,25 @@ public class MainMenu extends JFrame{
 
             }
         });
+
+        JButton calculator = new JButton("Coronavirus");
+        calculator.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+                try {
+                    PracticeControl control = new PracticeControl();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+                //Add a feature that senses if a window has already been opened so that you don't open multiple
+            }
+
+            public void mouseReleased(MouseEvent e) {
+
+            }
+        });
+
         JButton teaShop = new JButton("Shopping");
         teaShop.addMouseListener(new MouseAdapter() {
             @Override
@@ -80,6 +101,7 @@ public class MainMenu extends JFrame{
         content.add(covidButton);
 
         content.add(greeting);
+        content.add(calculator);
 
         menu.setVisible(true);
 

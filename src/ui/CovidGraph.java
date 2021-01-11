@@ -297,7 +297,6 @@ public class CovidGraph extends JFrame{
 
         //object.calculateTotal();
 
-        //final calculation is decimal
     }
 
 }
