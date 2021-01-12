@@ -1,6 +1,6 @@
 package ui;
 
-import control.CovidTrackerController;
+
 
 import javax.swing.*;
 import javax.swing.JFrame;

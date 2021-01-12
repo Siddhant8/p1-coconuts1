@@ -3,6 +3,7 @@ package ui;
 import java.io.*;
 import java.lang.Math;
 import java.util.Random;
+import java.io.File;
 
 public class PracticeModel {
     public int numPeople = 0;
@@ -10,6 +11,9 @@ public class PracticeModel {
     public int numInitCases = 0;
     public int numDays = 0;
     public int casesToday = 0;
+
+    public String numCase = "";
+    public String state = "";
 
     public void setNumPeople(int population){
         numPeople = population;
@@ -83,6 +87,20 @@ public class PracticeModel {
     public int getCasesToday(){
         return casesToday;
     }
+
+    public void setNumCase(){
+        {
+            getCasesToday();
+        }
+        numCase = String.valueOf(casesToday);
+    }
+
+    public String getNumCase(){
+        return numCase;
+    }
+
+
+
 
     public static void main(String[] args){
 

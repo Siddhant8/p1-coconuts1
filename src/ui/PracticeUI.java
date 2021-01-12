@@ -15,6 +15,8 @@ import java.awt.event.MouseEvent;
 import java.lang.Math;
 import java.util.Random;
 
+import java.io.File;
+
 public class PracticeUI {
 
     JTextField numPeople = new JTextField(5);
@@ -64,6 +66,8 @@ public class PracticeUI {
 
         content.add(calculate);
 
+        content.add(numCasesToday);
+
 
         printPeople.addMouseListener(new MouseAdapter(){
             @Override
@@ -75,8 +79,6 @@ public class PracticeUI {
                 practiceControl.setNumPeople(numPeople);
 
             }
-
-
 
 
         });
@@ -131,6 +133,7 @@ public class PracticeUI {
 
             public void mouseReleased(MouseEvent e){
                 practiceControl.setCasesToday(calculate);
+                practiceControl.setNumCase(numCasesToday);
 
             }
 
