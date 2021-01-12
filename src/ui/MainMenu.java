@@ -96,12 +96,14 @@ public class MainMenu extends JFrame{
         //adds the buttons to the UI
         content.add(jukeBox);
 
-        content.add(teaShop);
+        //content.add(teaShop);
 
         content.add(covidButton);
 
-        content.add(greeting);
         content.add(calculator);
+
+        content.add(greeting);
+
 
         menu.setVisible(true);
 

@@ -3,6 +3,7 @@ package ui;
 import javax.swing.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.lang.Math;
 
 import java.io.IOException;
 
@@ -26,6 +27,8 @@ public class PracticeControl {
     public void setNumInitCases(JTextField textfield){model.setNumInitCases(Integer.parseInt(textfield.getText()));}
 
     public void setNumDays(JTextField textfield){model.setNumDays(Integer.parseInt(textfield.getText()));}
+
+    public void setCasesToday(JButton button){model.setCasesToday();}
 
 
 }

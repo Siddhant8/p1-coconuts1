@@ -1,13 +1,15 @@
 package ui;
 
 import java.io.*;
+import java.lang.Math;
+import java.util.Random;
 
 public class PracticeModel {
-    int numPeople = 0;
-    int numMaskers = 0;
-    int numInitCases = 0;
-    int numDays = 0;
-    int casesToday = 0;
+    public int numPeople = 0;
+    public int numMaskers = 0;
+    public int numInitCases = 0;
+    public int numDays = 0;
+    public int casesToday = 0;
 
     public void setNumPeople(int population){
         numPeople = population;
@@ -30,6 +32,8 @@ public class PracticeModel {
         System.out.println(numDays);
     }
 
+
+
     public int getNumPeople(){
         return numPeople;
     }
@@ -46,7 +50,7 @@ public class PracticeModel {
         return numDays;
     }
 
-    public void calculateCases(){
+    public void setCasesToday(){
         {
             getNumPeople();
             getNumMaskers();
@@ -57,7 +61,10 @@ public class PracticeModel {
         int nonMaskWearers = numPeople - numMaskers;
         double doubleNonMaskWearers = nonMaskWearers;
         System.out.println(nonMaskWearers);
-        double calculationProportion = doubleNonMaskWearers / numPeople;
+        double calculationProportion = nonMaskWearers / numPeople;
+        double dubNumMaskers = numMaskers;
+        //double calculationProportion = dubNumMaskers/numPeople ;
+        //double calculationProportion = 0.2;
         System.out.println(calculationProportion);
         System.out.println(numDays);
         double doubleNumberOfDays = (double) numDays;
@@ -77,5 +84,8 @@ public class PracticeModel {
         return casesToday;
     }
 
+    public static void main(String[] args){
+
+    }
 
 }

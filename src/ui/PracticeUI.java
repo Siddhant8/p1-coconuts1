@@ -29,6 +29,11 @@ public class PracticeUI {
     JTextField numDays = new JTextField(5);
     JButton printDays = new JButton("Click for day number");
 
+    JLabel numCasesToday = new JLabel();
+
+
+
+    JButton calculate = new JButton("Calcuate the number of Cases");
 
 
     public PracticeUI(PracticeControl practiceControl){
@@ -57,6 +62,8 @@ public class PracticeUI {
         content.add(numDays);
         content.add(printDays);
 
+        content.add(calculate);
+
 
         printPeople.addMouseListener(new MouseAdapter(){
             @Override
@@ -66,7 +73,7 @@ public class PracticeUI {
 
             public void mouseReleased(MouseEvent e){
                 practiceControl.setNumPeople(numPeople);
-                System.out.println(Integer.parseInt(numPeople.getText()));
+
             }
 
 
@@ -81,8 +88,8 @@ public class PracticeUI {
             }
 
             public void mouseReleased(MouseEvent e){
-                practiceControl.setNumPeople(numMaskers);
-                System.out.println(Integer.parseInt(numMaskers.getText()));
+                practiceControl.setNumInitCases(numMaskers);
+
             }
 
 
@@ -96,8 +103,8 @@ public class PracticeUI {
             }
 
             public void mouseReleased(MouseEvent e){
-                practiceControl.setNumPeople(numInitCases);
-                System.out.println(Integer.parseInt(numInitCases.getText()));
+                practiceControl.setNumInitCases(numInitCases);
+
             }
 
 
@@ -110,14 +117,25 @@ public class PracticeUI {
             }
 
             public void mouseReleased(MouseEvent e){
-                practiceControl.setNumPeople(numDays);
-                System.out.println(Integer.parseInt(numDays.getText()));
+                practiceControl.setNumDays(numDays);
+
             }
 
+        });
 
+        calculate.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mousePressed(MouseEvent e){
 
+            }
+
+            public void mouseReleased(MouseEvent e){
+                practiceControl.setCasesToday(calculate);
+
+            }
 
         });
+
 
 
 
