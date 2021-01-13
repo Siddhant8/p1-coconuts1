@@ -16,6 +16,7 @@ import java.lang.Math;
 import java.util.Random;
 
 import java.io.File;
+import java.io.IOException;
 
 public class PracticeUI {
 
@@ -38,7 +39,7 @@ public class PracticeUI {
     JButton calculate = new JButton("Calcuate the number of Cases");
 
 
-    public PracticeUI(PracticeControl practiceControl){
+    public PracticeUI(PracticeControl practiceControl) throws IOException{
         JFrame covidTracker = new JFrame("Simulate an exponential Covid-Case Growth calculator");
         covidTracker.setBounds(100, 100, 418, 315);
         covidTracker.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -132,8 +133,15 @@ public class PracticeUI {
             }
 
             public void mouseReleased(MouseEvent e){
-                practiceControl.setCasesToday(calculate);
-                practiceControl.setNumCase(numCasesToday);
+                try{
+
+                    practiceControl.setCasesToday(calculate);
+                    //practiceControl.setNumCase(numCasesToday);
+
+                }catch(IOException ioException) {
+                    ioException.printStackTrace();
+                }
+
 
             }
 

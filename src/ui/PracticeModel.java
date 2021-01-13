@@ -4,6 +4,7 @@ import java.io.*;
 import java.lang.Math;
 import java.util.Random;
 import java.io.File;
+import java.io.FileWriter;
 
 public class PracticeModel {
     public int numPeople = 0;
@@ -14,6 +15,11 @@ public class PracticeModel {
 
     public String numCase = "";
     public String state = "";
+
+    File storedCases = new File("covidCases.txt");
+
+
+    Writer typer;
 
     public void setNumPeople(int population){
         numPeople = population;
@@ -54,7 +60,7 @@ public class PracticeModel {
         return numDays;
     }
 
-    public void setCasesToday(){
+    public void setCasesToday() throws IOException{
         {
             getNumPeople();
             getNumMaskers();
@@ -81,6 +87,21 @@ public class PracticeModel {
         casesToday = (int)newCases;
         System.out.println(newCases);
         System.out.println(casesToday);
+        storedCases.createNewFile();
+        typer = new BufferedWriter(new FileWriter(storedCases, true));
+        if(casesToday >= numPeople){
+            typer.write("Everyone has coronavirus. Stay at Home Order");
+            typer.close();
+        }else{
+
+            numCase = String.valueOf(casesToday);
+            //storedCases.createNewFile();
+            //typer = new BufferedWriter(new FileWriter(storedCases, true));
+            typer.write(numCase);
+            typer.write("/n");
+            typer.close();
+
+        }
 
     }
 
@@ -88,7 +109,7 @@ public class PracticeModel {
         return casesToday;
     }
 
-    public void setNumCase(){
+    /*public void setNumCase(){
         {
             getCasesToday();
         }
@@ -97,7 +118,7 @@ public class PracticeModel {
 
     public String getNumCase(){
         return numCase;
-    }
+    }*/
 
 
 

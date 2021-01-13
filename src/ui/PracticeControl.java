@@ -29,9 +29,9 @@ public class PracticeControl {
 
     public void setNumDays(JTextField textfield){model.setNumDays(Integer.parseInt(textfield.getText()));}
 
-    public void setCasesToday(JButton button){model.setCasesToday();}
+    public void setCasesToday(JButton button) throws IOException { model.setCasesToday();}
 
-    public void setNumCase(JLabel label){model.setNumCase();}
+    //public void setNumCase(JLabel label){model.setNumCase();}
 
 
 }
