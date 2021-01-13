@@ -39,8 +39,8 @@ A full tea shop will be in place. A UI will simulate moving through a cafe/store
 | Andrew Hale| 12/18 | | |
 
 ## Big Ticket Items ##
-<img width="790" alt="Screen Shot 2020-12-11 at 8 25 16 AM" src="https://user-images.githubusercontent.com/71453341/101928975-1b554c80-3b8b-11eb-9304-c8471ff34a4b.png">
-<img width="778" alt="Screen Shot 2020-12-11 at 8 25 39 AM" src="https://user-images.githubusercontent.com/71453341/101928979-1c867980-3b8b-11eb-9bf1-42a7658a37ce.png">
+<img width="765" alt="Screen Shot 2021-01-12 at 6 58 12 PM" src="https://user-images.githubusercontent.com/71453341/104401351-d82f2600-5508-11eb-8186-57fa022ed2e7.png">
+<img width="772" alt="Screen Shot 2021-01-12 at 7 02 40 PM" src="https://user-images.githubusercontent.com/71453341/104401556-4542bb80-5509-11eb-987e-e1cda0c206a0.png">
 <img width="783" alt="Screen Shot 2020-12-11 at 8 25 52 AM" src="https://user-images.githubusercontent.com/71453341/101928982-1db7a680-3b8b-11eb-9839-f376e0c075a6.png">
 <img width="776" alt="Screen Shot 2020-12-11 at 8 26 02 AM" src="https://user-images.githubusercontent.com/71453341/101928985-1e503d00-3b8b-11eb-9a11-6405210d0fa8.png">
 
