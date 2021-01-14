@@ -20,6 +20,7 @@ import java.io.IOException;
 
 public class PracticeUI {
 
+    //sets my UI components
     JTextField numPeople = new JTextField(5);
     JButton printPeople = new JButton("Click for population");
 
@@ -34,11 +35,9 @@ public class PracticeUI {
 
     JLabel numCasesToday = new JLabel();
 
-
-
     JButton calculate = new JButton("Calcuate the number of Cases");
 
-
+    //constructor that creates and adds UI components
     public PracticeUI(PracticeControl practiceControl) throws IOException{
         JFrame covidTracker = new JFrame("Simulate an exponential Covid-Case Growth calculator");
         covidTracker.setBounds(100, 100, 418, 315);
@@ -70,6 +69,7 @@ public class PracticeUI {
         content.add(numCasesToday);
 
 
+        //adds mouse listeners for inputs
         printPeople.addMouseListener(new MouseAdapter(){
             @Override
             public void mousePressed(MouseEvent e){
@@ -126,6 +126,7 @@ public class PracticeUI {
 
         });
 
+        //adds mouseListeners to calculate cases
         calculate.addMouseListener(new MouseAdapter(){
             @Override
             public void mousePressed(MouseEvent e){

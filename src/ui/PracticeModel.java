@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileWriter;
 
 public class PracticeModel {
+    //initializes variables
     public int numPeople = 0;
     public int numMaskers = 0;
     public int numInitCases = 0;
@@ -14,36 +15,40 @@ public class PracticeModel {
     public int casesToday = 0;
 
     public String numCase = "";
-    public String state = "";
+    //public String state = "";
 
+    //creates file
     File storedCases = new File("covidCases.txt");
 
 
     Writer typer;
 
+    //sets number of people
     public void setNumPeople(int population){
         numPeople = population;
         System.out.println(numPeople);
 
     }
-
+    //sets number of people wearing masks
     public void setNumMaskers(int maskers){
         numMaskers = maskers;
         System.out.println(numMaskers);
     }
 
+    //sets the number of initial cases
     public void setNumInitCases(int cases){
         numInitCases = cases;
         System.out.println(numInitCases);
     }
 
+    //sets the number of days that have passed since the outbreak
     public void setNumDays(int days){
         numDays = days;
         System.out.println(numDays);
     }
 
 
-
+    //getters for my variables
     public int getNumPeople(){
         return numPeople;
     }
@@ -60,6 +65,7 @@ public class PracticeModel {
         return numDays;
     }
 
+    //calculates my coronavirus cases
     public void setCasesToday() throws IOException{
         {
             getNumPeople();
@@ -105,6 +111,7 @@ public class PracticeModel {
 
     }
 
+    //returns my coronavirus cases
     public int getCasesToday(){
         return casesToday;
     }

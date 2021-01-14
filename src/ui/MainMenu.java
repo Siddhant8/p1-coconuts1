@@ -50,7 +50,7 @@ public class MainMenu extends JFrame{
             }
         });
 
-        JButton calculator = new JButton("Coronavirus");
+        JButton calculator = new JButton("Coronavirus Calculator");
         calculator.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -98,7 +98,7 @@ public class MainMenu extends JFrame{
 
         //content.add(teaShop);
 
-        content.add(covidButton);
+        //content.add(covidButton);
 
         content.add(calculator);
 
