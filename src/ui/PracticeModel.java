@@ -98,7 +98,7 @@ public class PracticeModel {
             //storedCases.createNewFile();
             //typer = new BufferedWriter(new FileWriter(storedCases, true));
             typer.write(numCase);
-            typer.write("/n");
+            typer.write("\n");
             typer.close();
 
         }
