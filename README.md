@@ -10,7 +10,6 @@ First click on the MainMenu configuration and run MainMenu. This is a picture of
 <img width="419" alt="Screen Shot 2021-01-14 at 8 03 36 PM" src="https://user-images.githubusercontent.com/71453341/104680054-dbaae480-56a3-11eb-9d47-16f67fc0edaa.png">
 
 Coronavirus Calculator - Input the total number of people wanted in a simulation in the first textfield and then click the "Click for Population" button immediately after. Input the number of people wearing masks in the simulation into the second textfield and click the "Click for Maskers" button immediately after. Input the number of initial coronavirus cases in the third textfield and click the "Click for Init Cases" button immediately after. Input the day number in the fourth textfield and click the "Click for Days" button immediately after. Once everything is inputed click the "Calculate the number of cases" button to calculate the total number of cases. A new separate file called covidCases.txt will be created and it will not be in the .idea, out, or src folders. The number of people wearing masks can be changed around throughout the simulation.  
-Picture of Coronavirus Calculator:
 <img width="419" alt="Screen Shot 2021-01-14 at 8 05 03 PM" src="https://user-images.githubusercontent.com/71453341/104680504-e0bc6380-56a4-11eb-8cf4-79cdb2cee7d2.png">
 
 ## Delivery Plans and Content: ## 
