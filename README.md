@@ -18,7 +18,10 @@ First click on the MainMenu configuration and run MainMenu. This is a picture of
 
 Coronavirus Calculator - Input the total number of people wanted in a simulation in the first textfield and then click the "Click for Population" button immediately after. Input the number of people wearing masks in the simulation into the second textfield and click the "Click for Maskers" button immediately after. Input the number of initial coronavirus cases in the third textfield and click the "Click for Init Cases" button immediately after. Input the day number in the fourth textfield and click the "Click for Days" button immediately after. Once everything is inputed click the "Calculate the number of cases" button to calculate the total number of cases. A new separate file called covidCases.txt will be created and it will not be in the .idea, out, or src folders. The number of people wearing masks can be changed around throughout the simulation.  
 <img width="419" alt="Screen Shot 2021-01-14 at 8 05 03 PM" src="https://user-images.githubusercontent.com/71453341/104680504-e0bc6380-56a4-11eb-8cf4-79cdb2cee7d2.png">
-
+## How to Run The Juke Box ##
+### [https://p1coconuts-teashop.netlify.app/](https://drive.google.com/file/d/1AJ73a99ONtWcWSjAeCwEpJivfJP5vyrG/view?usp=sharing) 
+<br/>Click the link above to watch a short video on how to run the jukebox.
+<br/><br/>
 ## How to Run Tea Shop ##
 ### [https://p1coconuts-teashop.netlify.app/](https://p1coconuts-teashop.netlify.app/) 
 <br/>Click the link above to access the website.
