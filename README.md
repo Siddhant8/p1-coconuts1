@@ -8,7 +8,7 @@ Summary:
 ## Scrum Board ##
 [Scrum Board Link](https://github.com/Siddhant8/p1-coconuts1/projects/1)
 <br/>Andrew Hale Completed Items: Make React based UI and program for Tea Shop Menu. Create game for TeaShop. Host program using Netlify.
-<br/>Siddhant Ranka Completed Items:
+<br/>Siddhant Ranka Completed Items:Created a coronavirus case calculator that calculates the number of coronavirus cases based on inputs of population, mask-wearers, initial case numbers, and the day.
 <br/>Aidan Rosen Completed Items:
 
 ## How to Run Our Code ##
