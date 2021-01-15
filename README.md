@@ -13,7 +13,8 @@ Summary:
 <br/><br/>Aidan Rosen Completed Items: finalized JukeBox to include multiple "Cassettes", clickable buttons built from txt-file stored URLs. Built with an ArrayList that uses data across the MVC (txt file in model, pass strings within txt file to control, iterate through strings in UI). 
 
 ## How to Run Our Code ##
-First click on the MainMenu configuration and run MainMenu. This is a picture of what the MainMenu will look like:
+First click on the MainMenu configuration and run MainMenu. 
+This is a picture of what the MainMenu will look like:
 <img width="419" alt="Screen Shot 2021-01-14 at 8 03 36 PM" src="https://user-images.githubusercontent.com/71453341/104680054-dbaae480-56a3-11eb-9d47-16f67fc0edaa.png">
 
 ## How to Run the Coronavirus Calculator ## 
