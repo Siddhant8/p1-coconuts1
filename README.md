@@ -6,7 +6,12 @@ Summary:
 	Our project involves creating the GUI of a tea shop, and interacting with the tea shop in various ways. These “various ways” would be a jukebox, or ordering a beverage, or a coronavirus case tracker in the area (just to name a few). Some of these would be independent due to simplicity, but could also involve collaboration to blow them up in proportion. For example, the coronavirus tracker may start out as just a text box but then be blown up into an animation. To contain everything in a single window, we will need card panels ← ask Kevin and Nakul. The purpose is to simulate a tea shop.
 
 ## How to Run Our Code ##
-Coronavirus Tracker - The first textfield is where someone inputs the total number of people in their simulated population. Once someone adds the number of people in the first text field click on the first button to send the number of people into the simulation. The second textfield is the field to input the initial number of people wearing masks. Click the second button after inputting the initial number of people wearing masks. The third textfield is the input for the initial number of cases that started the outbreak in this simulation. Click the third button after inputting this number into the textfield. Finally, the fourth textfield is where the number of days is inputted and the fourth button is clicked right after.
+First click on the MainMenu configuration and run MainMenu. This is a picture of what the MainMenu will look like:
+<img width="419" alt="Screen Shot 2021-01-14 at 8 03 36 PM" src="https://user-images.githubusercontent.com/71453341/104680054-dbaae480-56a3-11eb-9d47-16f67fc0edaa.png">
+
+Coronavirus Calculator - Input the total number of people wanted in a simulation in the first textfield and then click the "Click for Population" button immediately after. Input the number of people wearing masks in the simulation into the second textfield and click the "Click for Maskers" button immediately after. Input the number of initial coronavirus cases in the third textfield and click the "Click for Init Cases" button immediately after. Input the day number in the fourth textfield and click the "Click for Days" button immediately after. Once everything is inputed click the "Calculate the number of cases" button to calculate the total number of cases. A new separate file called covidCases.txt will be created and it will not be in the .idea, out, or src folders. The number of people wearing masks can be changed around throughout the simulation.  
+Picture of Coronavirus Calculator:
+<img width="419" alt="Screen Shot 2021-01-14 at 8 05 03 PM" src="https://user-images.githubusercontent.com/71453341/104680504-e0bc6380-56a4-11eb-8cf4-79cdb2cee7d2.png">
 
 ## Delivery Plans and Content: ## 
 
