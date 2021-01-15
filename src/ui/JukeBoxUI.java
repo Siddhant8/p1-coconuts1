@@ -34,7 +34,7 @@ public class JukeBoxUI extends JFrame {
 
         setContentPane(new DrawPane());
 
-        JButton playMusic = new JButton("Click me to play the music");
+        JButton playMusic = new JButton("Click me to store some music!");
 
         JButton cassetteMaker = new JButton("Click me to create your cassettes!");
 
@@ -56,14 +56,14 @@ public class JukeBoxUI extends JFrame {
             public void mouseReleased(MouseEvent e) {
                 int iterationLimit = 0;//Use this to get number of items equal to text file
                 try {
-                    iterationLimit = control.getCassetteLength();
+                    iterationLimit = control.getCassetteLength(); //Calls to control with an accessor
                 } catch (IOException ioException) {
                     ioException.printStackTrace();
                 }
                 System.out.println("This is the iteration limit: " + iterationLimit);
                 for (int i = 0; i < iterationLimit; i++){
                     try {
-                        Cassetes.add(new Cassette(control.getCassette(i)));
+                        Cassetes.add(new Cassette(control.getCassette(i))); //Adds to the arrayList
                     } catch (IOException ioException) {
                         ioException.printStackTrace();
                     }
@@ -75,7 +75,7 @@ public class JukeBoxUI extends JFrame {
 
 
                 for (int i = 0; i < Cassetes.size(); i++){
-                    getContentPane().add(Cassetes.get(i));
+                    getContentPane().add(Cassetes.get(i)); //Displays the buttons
                 }
 
 

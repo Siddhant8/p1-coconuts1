@@ -32,14 +32,15 @@ public class JukeBoxModel {
         //The true is for the append boolean. By setting it to true, we'll only ever append strings to new lines
         /**ADD a control flow statement to prevent the addition of multiple URLS of the same thing**/
 
+        arrangeUrls(); //<-- call arrangeURLs here so that the list collectUrls updates and we can know if the URL is in the txt file or not
         if (collectUrls.contains(youtubeUrl)){ //To prevent same thing from being added multiple times
-            typer.write(youtubeUrl);
-            collectUrls.add(youtubeUrl); //Adding this here outside arrangeUrls in case they add multiple Urls BEFORE pressing "build casettes"
+            System.out.println("URL already added"); //NOTE: be careful with your control flow!
         }
         else {
-            System.out.println("URL already added");
+            typer.write(youtubeUrl);
+            typer.write("\n");
+            collectUrls.add(youtubeUrl); //Adding this here outside arrangeUrls in case they add multiple Urls BEFORE pressing "build casettes"
         }
-        typer.write("\n");
         //The above is necessary to add a line break between urls, which is critical to reading the whole.txt file
         typer.close();
 
