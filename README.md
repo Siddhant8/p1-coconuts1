@@ -8,9 +8,9 @@ Summary:
 ## Scrum Board ##
 [Scrum Board Link](https://github.com/Siddhant8/p1-coconuts1/projects/1)
 [Issues Link Showing Each Person's Code](https://github.com/Siddhant8/p1-coconuts1/issues/1)
-<br/br/>Andrew Hale Completed Items: Make React based UI and program for Tea Shop Menu. Create game for TeaShop. Host program using Netlify.
-<br/br/>Siddhant Ranka Completed Items:Created a coronavirus case calculator that calculates the number of coronavirus cases based on inputs of population, mask-wearers, initial case numbers, and the day.
-<br/br/>Aidan Rosen Completed Items: finalized JukeBox to include multiple "Cassettes", clickable buttons built from txt-file stored URLs. Built with an ArrayList that uses data across the MVC (txt file in model, pass strings within txt file to control, iterate through strings in UI). 
+<br/><br/>Andrew Hale Completed Items: Make React based UI and program for Tea Shop Menu. Create game for TeaShop. Host program using Netlify.
+<br/><br/>Siddhant Ranka Completed Items:Created a coronavirus case calculator that calculates the number of coronavirus cases based on inputs of population, mask-wearers, initial case numbers, and the day.
+<br/><br/>Aidan Rosen Completed Items: finalized JukeBox to include multiple "Cassettes", clickable buttons built from txt-file stored URLs. Built with an ArrayList that uses data across the MVC (txt file in model, pass strings within txt file to control, iterate through strings in UI). 
 
 ## How to Run Our Code ##
 First click on the MainMenu configuration and run MainMenu. This is a picture of what the MainMenu will look like:
