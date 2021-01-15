@@ -22,6 +22,18 @@ Coronavirus Calculator - Input the total number of people wanted in a simulation
 [https://p1coconuts-teashop.netlify.app/](https://p1coconuts-teashop.netlify.app/) 
 <br/>Click the link above to access the website.
 
+![image](https://user-images.githubusercontent.com/54915593/104752605-ba7dde80-570b-11eb-8fc7-e76ae10b6253.png)
+<br/>Click either menu to access either the ordering or the games.
+
+![image](https://user-images.githubusercontent.com/54915593/104752729-e13c1500-570b-11eb-9532-31a92272e7b8.png)
+<br/>Click products to see products, cart to see your cart. Click add to cart to add an item to your cart, click remove to remove it from your cart.
+
+![image](https://user-images.githubusercontent.com/54915593/104752986-3aa44400-570c-11eb-84fb-b335d6e12374.png)
+<br/>Click "Start" to start the game and click the arrows to move around.
+
+NOTE!
+<br/> This site is only built for ONE viewport. It might look weird on your computer. In the future I would like to style the site better but right now I am not focused on making the site look pretty. I am more focused on making it usable.
+
 [Link to GitHub](https://github.com/AndrewH06/teashop) 
 <br/>The GitHub is seperate because Netlify hosts based on a GitHub Repository. This means I must have a React App on its own Git so it must be seperate.
 <br/>[src Folder](https://github.com/AndrewH06/teashop/tree/master/src) | [js for Order](https://github.com/AndrewH06/teashop/blob/master/src/order.js) | [Main js for Snake](https://github.com/AndrewH06/teashop/blob/master/src/snake.js) | [js for Home Page](https://github.com/AndrewH06/teashop/blob/master/src/home.js) | [js for App](https://github.com/AndrewH06/teashop/blob/master/src/App.js)
