@@ -20,6 +20,7 @@ Coronavirus Calculator -
 https://user-images.githubusercontent.com/71453341/104786527-03508a00-5742-11eb-8882-17d6cf35892a.mp4
 
 <img width="419" alt="Screen Shot 2021-01-14 at 8 05 03 PM" src="https://user-images.githubusercontent.com/71453341/104680504-e0bc6380-56a4-11eb-8cf4-79cdb2cee7d2.png">
+
 ## How to Run The Juke Box ##
 ### [https://p1coconuts-teashop.netlify.app/](https://drive.google.com/file/d/1AJ73a99ONtWcWSjAeCwEpJivfJP5vyrG/view?usp=sharing) 
 <br/>Please click the link above to watch a short video on how to run the jukebox.
