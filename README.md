@@ -10,6 +10,7 @@ Summary:
 <br/>Andrew Hale Completed Items: Make React based UI and program for Tea Shop Menu. Create game for TeaShop. Host program using Netlify.
 <br/>Siddhant Ranka Completed Items:Created a coronavirus case calculator that calculates the number of coronavirus cases based on inputs of population, mask-wearers, initial case numbers, and the day.
 <br/>Aidan Rosen Completed Items:
+[Issues Link Showing Each Person's Code](https://github.com/Siddhant8/p1-coconuts1/issues/1)
 
 ## How to Run Our Code ##
 First click on the MainMenu configuration and run MainMenu. This is a picture of what the MainMenu will look like:
