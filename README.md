@@ -5,6 +5,12 @@
 Summary: 
 	Our project involves creating the GUI of a tea shop, and interacting with the tea shop in various ways. These “various ways” would be a jukebox, or ordering a beverage, or a coronavirus case tracker in the area (just to name a few). Some of these would be independent due to simplicity, but could also involve collaboration to blow them up in proportion. For example, the coronavirus tracker may start out as just a text box but then be blown up into an animation. To contain everything in a single window, we will need card panels ← ask Kevin and Nakul. The purpose is to simulate a tea shop.
 
+## Scrum Board ##
+[Scrum Board Link](https://github.com/Siddhant8/p1-coconuts1/projects/1) 
+Andrew Hale Completed Items: Make React based UI and program for Tea Shop Menu. Create game for TeaShop. Host program using Netlify.
+Siddhant Ranka Completed Items:
+Aidan Rosen Completed Items:
+
 ## How to Run Our Code ##
 First click on the MainMenu configuration and run MainMenu. This is a picture of what the MainMenu will look like:
 <img width="419" alt="Screen Shot 2021-01-14 at 8 03 36 PM" src="https://user-images.githubusercontent.com/71453341/104680054-dbaae480-56a3-11eb-9d47-16f67fc0edaa.png">
@@ -13,11 +19,12 @@ Coronavirus Calculator - Input the total number of people wanted in a simulation
 <img width="419" alt="Screen Shot 2021-01-14 at 8 05 03 PM" src="https://user-images.githubusercontent.com/71453341/104680504-e0bc6380-56a4-11eb-8cf4-79cdb2cee7d2.png">
 
 ## How to Run Tea Shop ##
-[https://p1coconuts-teashop.netlify.app/](https://p1coconuts-teashop.netlify.app/)
+[https://p1coconuts-teashop.netlify.app/](https://p1coconuts-teashop.netlify.app/) 
 Click the link above to access the website.
 
-[Link to GitHub](https://github.com/AndrewH06/teashop)
+[Link to GitHub](https://github.com/AndrewH06/teashop) 
 The GitHub is seperate because Netlify hosts based on a GitHub Repository. This means I must have a React App on its own Git so it must be seperate.
+[src Folder](https://github.com/AndrewH06/teashop/tree/master/src) | [js for Order](https://github.com/AndrewH06/teashop/blob/master/src/order.js) | [Main js for Snake](https://github.com/AndrewH06/teashop/blob/master/src/snake.js) | [js for Home Page](https://github.com/AndrewH06/teashop/blob/master/src/home.js) | [js for App](https://github.com/AndrewH06/teashop/blob/master/src/App.js)
 
 ## Delivery Plans and Content: ## 
 
