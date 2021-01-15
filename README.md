@@ -19,7 +19,7 @@ Coronavirus Calculator - Input the total number of people wanted in a simulation
 <img width="419" alt="Screen Shot 2021-01-14 at 8 05 03 PM" src="https://user-images.githubusercontent.com/71453341/104680504-e0bc6380-56a4-11eb-8cf4-79cdb2cee7d2.png">
 
 ## How to Run Tea Shop ##
-## [https://p1coconuts-teashop.netlify.app/](https://p1coconuts-teashop.netlify.app/) 
+### [https://p1coconuts-teashop.netlify.app/](https://p1coconuts-teashop.netlify.app/) 
 <br/>Click the link above to access the website.
 
 ![image](https://user-images.githubusercontent.com/54915593/104752605-ba7dde80-570b-11eb-8fc7-e76ae10b6253.png)
@@ -31,10 +31,10 @@ Coronavirus Calculator - Input the total number of people wanted in a simulation
 ![image](https://user-images.githubusercontent.com/54915593/104752986-3aa44400-570c-11eb-84fb-b335d6e12374.png)
 <br/>Click "Start" to start the game and click the arrows to move around.
 
-## NOTE!
+### NOTE!
 <br/> This site is only built for ONE viewport. It might look weird on your computer. In the future I would like to style the site better but right now I am not focused on making the site look pretty. I am more focused on making it usable.
 
-## [Link to GitHub](https://github.com/AndrewH06/teashop) 
+### [Link to GitHub](https://github.com/AndrewH06/teashop) 
 <br/>The GitHub is seperate because Netlify hosts based on a GitHub Repository. This means I must have a React App on its own Git so it must be seperate.
 <br/>[src Folder](https://github.com/AndrewH06/teashop/tree/master/src) | [js for Order](https://github.com/AndrewH06/teashop/blob/master/src/order.js) | [Main js for Snake](https://github.com/AndrewH06/teashop/blob/master/src/snake.js) | [js for Home Page](https://github.com/AndrewH06/teashop/blob/master/src/home.js) | [js for App](https://github.com/AndrewH06/teashop/blob/master/src/App.js)
 
