@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -17,6 +18,8 @@ public class JukeBoxUI extends JFrame {
     Image image;
     Image doneSign; //Need this image to paint the "done" symbol
     int paintSign = 0;
+
+    ArrayList<Cassette> Cassetes = new ArrayList<Cassette>();
 
 
     public JukeBoxUI(JukeBoxControl control) throws IOException {
@@ -33,6 +36,8 @@ public class JukeBoxUI extends JFrame {
 
         JButton playMusic = new JButton("Click me to play the music");
 
+        JButton cassetteMaker = new JButton("Click me to create your cassettes!");
+
 
         JTextField urlInput = new JTextField("Type a Youtube URL in me!", 30);
 
@@ -40,28 +45,70 @@ public class JukeBoxUI extends JFrame {
 
         getContentPane().add(urlInput);
         getContentPane().add(playMusic);
+        getContentPane().add(cassetteMaker);
+
+        cassetteMaker.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+
+            public void mouseReleased(MouseEvent e) {
+                int iterationLimit = 0;//Use this to get number of items equal to text file
+                try {
+                    iterationLimit = control.getCassetteLength();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+                System.out.println("This is the iteration limit: " + iterationLimit);
+                for (int i = 0; i < iterationLimit; i++){
+                    try {
+                        Cassetes.add(new Cassette(control.getCassette(i)));
+                    } catch (IOException ioException) {
+                        ioException.printStackTrace();
+                    }
+
+                }//Fills out the Cassetes list. Can now add multiple buttons
+
+                getContentPane().add(Cassetes.get(0));
+                System.out.println("Added first cassete");
+
+
+                for (int i = 0; i < Cassetes.size(); i++){
+                    getContentPane().add(Cassetes.get(i));
+                }
+
+
+            }
+
+
+        });
+
+
+
+
+        //Cassette firstCas = new Cassette("https://www.youtube.com/watch?v=TCFabT7arA4");
+
+        //getContentPane().add(firstCas);
 
         class MakeTask extends TimerTask{
 
-            int counter = 13;
+            int counter = 3;
 
             @Override
             public void run() {
                 if (counter > 0) {
-                    System.out.println("running");
                     if (paintSign == 0) {
                         paintSign = 1;
                         System.out.println("1");
 
                     } else if (paintSign == 1) {
                         paintSign = 0;
-                        System.out.println("0");
                     }
                     repaint();
                     counter --;
                 }
                 else {
-                    System.out.println("Animation complete");
                     paintSign = 0;
                     repaint();
                     this.cancel();
@@ -161,6 +208,10 @@ public class JukeBoxUI extends JFrame {
         });
 
         setVisible(true);
+    }
+
+    public void createCassetes(){
+
     }
 
 
