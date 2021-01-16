@@ -8,6 +8,7 @@ Summary:
 ## Scrum Board + Short Summary of Completed Goals ##
 [Scrum Board Link](https://github.com/Siddhant8/p1-coconuts1/projects/1)<br/>
 [Issues Link Showing Each Person's Code](https://github.com/Siddhant8/p1-coconuts1/issues/1) NOTE: our github links are located within this issue page
+Note 2: Each ticket is described in the Big Ticket Items Section. 
 <br/><br/>Andrew Hale Completed Items: Make React based UI and program for Tea Shop Menu. Create game for TeaShop. Host program using Netlify.
 <br/><br/>Siddhant Ranka Completed Items: Created a coronavirus case calculator that calculates the number of coronavirus cases based on inputs of population, mask-wearers, initial case numbers, and the day. Each case calculated is written to a file.
 <br/><br/>Aidan Rosen Completed Items: finalized JukeBox to include multiple "Cassettes", clickable buttons built from txt-file stored URLs. Built with an ArrayList that uses data across the MVC (txt file in model, pass strings within txt file to control, iterate through strings in UI). 
@@ -68,16 +69,6 @@ A full tea shop will be in place. A UI will simulate moving through a cafe/store
 | Andrew Hale| Andrew H06 |https://github.com/AndrewH06 |
 
 
-### Link to scrum board: https://github.com/Siddhant8/p1-coconuts/projects/1 
-
-
-
-## Log of Code Pushed ##
-| Name | Date | Code Pushed | Code contribution description with hyperlink | 
-| --- | --- | --- | ----|
-| Siddhant Ranka | 12/18 | Coronavirus Tracker, Tea Shop UI. |https://github.com/Siddhant8/p1-coconuts/blob/main/src/CovidGraph.java https://github.com/Siddhant8/p1-coconuts/blob/main/src/TeaShop.java  https://github.com/Siddhant8/p1-coconuts/blob/main/src/MainMenu.java |
-| Aidan Rosen | 12/18 | | |
-| Andrew Hale| 12/18 | | |
 
 ## Big Ticket Items ##
 <img width="765" alt="Screen Shot 2021-01-12 at 6 58 12 PM" src="https://user-images.githubusercontent.com/71453341/104401351-d82f2600-5508-11eb-8186-57fa022ed2e7.png">
