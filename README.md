@@ -5,7 +5,7 @@
 Summary: 
 	Our project involves creating the GUI of a tea shop, and interacting with the tea shop in various ways. These “various ways” would be a jukebox, or ordering a beverage, or a coronavirus case tracker in the area (just to name a few). Some of these would be independent due to simplicity, but could also involve collaboration to blow them up in proportion. For example, the coronavirus tracker may start out as just a text box but then be blown up into an animation. To contain everything in a single window, we will need card panels ← ask Kevin and Nakul. The purpose is to simulate a tea shop.
 
-## Scrum Board + Short Summary of Completed Goals##
+## Scrum Board + Short Summary of Completed Goals ##
 [Scrum Board Link](https://github.com/Siddhant8/p1-coconuts1/projects/1)<br/>
 [Issues Link Showing Each Person's Code](https://github.com/Siddhant8/p1-coconuts1/issues/1) NOTE: our github links are located within this issue page
 <br/><br/>Andrew Hale Completed Items: Make React based UI and program for Tea Shop Menu. Create game for TeaShop. Host program using Netlify.
