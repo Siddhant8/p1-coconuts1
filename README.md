@@ -3,7 +3,7 @@
 ## Project Plan General Summary and Description of Parts ##
 
 Summary: 
-	Our project involves creating the GUI of a tea shop, and interacting with the tea shop in various ways. These “various ways” would be a jukebox, or ordering a beverage, or a coronavirus case tracker in the area (just to name a few). Some of these would be independent due to simplicity, but could also involve collaboration to blow them up in proportion. For example, the coronavirus tracker may start out as just a text box but then be blown up into an animation. To contain everything in a single window, we will need card panels ← ask Kevin and Nakul. The purpose is to simulate a tea shop.
+	Our project involves creating the GUI of a tea shop, and interacting with the tea shop in various ways. These “various ways” would be a jukebox, or ordering a beverage, or a coronavirus case tracker in the area (just to name a few). Some of these would be independent due to simplicity, but could also involve collaboration to blow them up in proportion. For example, the coronavirus tracker may start out as just a text box but then be blown up into an animation.
 
 ## Scrum Board + Short Summary of Completed Goals ##
 [Scrum Board Link](https://github.com/Siddhant8/p1-coconuts1/projects/1)<br/>
@@ -11,7 +11,7 @@ Summary:
 
 Note 2: Each ticket is described in the Big Ticket Items Section. Andrew did the shopping component with his REACT tea shop simulation, Siddhant did the Coronavirus Tracker Component(The Coronavirus Tracker is the same thing as the Coronavirus Calculator), and Aidan did the Music/Radio component(the same thing as the JukeBox).
 <br/><br/>Andrew Hale Completed Items: Make React based UI and program for Tea Shop Menu. Create game for TeaShop. Host program using Netlify.
-<br/><br/>Siddhant Ranka Completed Items: Created a coronavirus case calculator that calculates the number of coronavirus cases based on inputs of population, mask-wearers, initial case numbers, and the day number into a textfield specific for each number. There is a button to the left of each text field to click on. When each of those buttons is clicked the number in the textfield the button is to the left of will be entered into the system. A fifth button called Calculate Cases is clicked on to calculate the total number of cases. Each case calculated is written to a file. This tracker utilized MVC. As shown in the Big Ticket Items section this tracker is event-based.
+<br/><br/>Siddhant Ranka Completed Items: Created a coronavirus case calculator that calculates the number of coronavirus cases based on inputs of population, mask-wearers, initial case numbers, and the day number into a textfield specific for each number. There is a button to the left of each text field to click on. When each of those buttons is clicked the number in the textfield will be entered into the system. A fifth button called Calculate Cases is clicked on to calculate the total number of cases. Each case calculated is written to a file called covidCases.txt. This tracker utilized MVC. As shown in the Big Ticket Items section this tracker is event-based.
 <br/><br/>Aidan Rosen Completed Items: finalized JukeBox to include multiple "Cassettes", clickable buttons built from txt-file stored URLs. Built with an ArrayList that uses data across the MVC (txt file in model, pass strings within txt file to control, iterate through strings in UI). 
 
 ## How to Run Our Code ##
