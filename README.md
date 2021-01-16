@@ -7,7 +7,7 @@ Summary:
 
 ## Scrum Board + Short Summary of Completed Goals ##
 [Scrum Board Link](https://github.com/Siddhant8/p1-coconuts1/projects/1)<br/>
-[Issues Link Showing Each Person's Code](https://github.com/Siddhant8/p1-coconuts1/issues/1) NOTE: our github links are located within this issue page
+[Issues Link Showing Each Person's Code](https://github.com/Siddhant8/p1-coconuts1/issues/1) NOTE: our github links are located within this issue page. There is also a brief explanation for each link of code.
 
 Note 2: Each ticket is described in the Big Ticket Items Section. Andrew did the shopping component with his REACT tea shop simulation, Siddhant did the Coronavirus Tracker Component(The Coronavirus Tracker is the same thing as the Coronavirus Calculator), and Aidan did the Music/Radio component(the same thing as the JukeBox).
 <br/><br/>Andrew Hale Completed Items: Make React based UI and program for Tea Shop Menu. Create game for TeaShop. Host program using Netlify.
