@@ -8,9 +8,10 @@ Summary:
 ## Scrum Board + Short Summary of Completed Goals ##
 [Scrum Board Link](https://github.com/Siddhant8/p1-coconuts1/projects/1)<br/>
 [Issues Link Showing Each Person's Code](https://github.com/Siddhant8/p1-coconuts1/issues/1) NOTE: our github links are located within this issue page
-Note 2: Each ticket is described in the Big Ticket Items Section. 
+
+Note 2: Each ticket is described in the Big Ticket Items Section. Andrew did the shopping component, Siddhant did the Coronavirus Tracker Component, and Aidan did the Music/Radio component.
 <br/><br/>Andrew Hale Completed Items: Make React based UI and program for Tea Shop Menu. Create game for TeaShop. Host program using Netlify.
-<br/><br/>Siddhant Ranka Completed Items: Created a coronavirus case calculator that calculates the number of coronavirus cases based on inputs of population, mask-wearers, initial case numbers, and the day. Each case calculated is written to a file.
+<br/><br/>Siddhant Ranka Completed Items: Created a coronavirus case calculator that calculates the number of coronavirus cases based on inputs of population, mask-wearers, initial case numbers, and the day. Each case calculated is written to a file. This tracker utilized MVC. As shown in the delivery plan this tracker is event-based.
 <br/><br/>Aidan Rosen Completed Items: finalized JukeBox to include multiple "Cassettes", clickable buttons built from txt-file stored URLs. Built with an ArrayList that uses data across the MVC (txt file in model, pass strings within txt file to control, iterate through strings in UI). 
 
 ## How to Run Our Code ##
