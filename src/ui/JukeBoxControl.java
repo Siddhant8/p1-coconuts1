@@ -34,7 +34,7 @@ public class JukeBoxControl {
     }
 
     public int getCassetteLength() throws IOException {
-        model.arrangeUrls();
-        return model.collectUrls.size();
+        model.arrangeUrls(); //need to preset array to eliminate previous instances (don't want duplicate URLs)
+        return model.collectUrls.size(); //return size so that the loop in UI loops number of times = the number of URLs
     }
 }
