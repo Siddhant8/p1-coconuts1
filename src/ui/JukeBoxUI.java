@@ -1,10 +1,7 @@
 package ui;
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.JFrame;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
@@ -25,14 +22,16 @@ public class JukeBoxUI extends JFrame {
     public JukeBoxUI(JukeBoxControl control) throws IOException {
         getContentPane().setBackground(Color.BLUE);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setBounds(100, 100, 500, 500);
-        getContentPane().setLayout(new BoxLayout(getContentPane(), BoxLayout.X_AXIS));
+        //setBounds(100, 100, 500, 500);
+        setSize(500,500);
+
 
         image = new ImageIcon("src/ui/jukebox.jpg").getImage();
         doneSign = new ImageIcon("src/ui/done.png").getImage();
 
-
+        getContentPane().setLayout(new BoxLayout(getContentPane(), BoxLayout.X_AXIS));
         setContentPane(new DrawPane());
+
 
         JButton playMusic = new JButton("Click me to store some music!");
 
@@ -70,12 +69,12 @@ public class JukeBoxUI extends JFrame {
 
                 }//Fills out the Cassetes list. Can now add multiple buttons
 
-                getContentPane().add(Cassetes.get(0));
-                System.out.println("Added first cassete");
 
 
                 for (int i = 0; i < Cassetes.size(); i++){
                     getContentPane().add(Cassetes.get(i)); //Displays the buttons
+                    repaint();
+                    System.out.println("Repainted");
                 }
 
 
@@ -84,12 +83,6 @@ public class JukeBoxUI extends JFrame {
 
         });
 
-
-
-
-        //Cassette firstCas = new Cassette("https://www.youtube.com/watch?v=TCFabT7arA4");
-
-        //getContentPane().add(firstCas);
 
         class MakeTask extends TimerTask{
 
@@ -117,53 +110,6 @@ public class JukeBoxUI extends JFrame {
             }
         }
 
-        /*TimerTask animateSign = new TimerTask(){
-
-                    int counter = 13;
-
-                    @Override
-                    public void run() {
-                        if (counter > 0) {
-                            if (paintSign == 0) {
-                                paintSign = 1;
-                                System.out.println("1");
-
-                            } else if (paintSign == 1) {
-                                paintSign = 0;
-                                System.out.println("0");
-                            }
-                            repaint();
-                            counter --;
-                        }
-                        else {
-                            System.out.println("Animation complete");
-                            paintSign = 0;
-                            repaint();
-                            this.cancel();
-
-                       }
-                    }
-                };*/
-
-
-        /*
-
-        Timer timer = new Timer(1000, new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-                if (paintSign == 0) {
-                    paintSign = 1;
-                    System.out.println("1");
-
-                } else if (paintSign == 1) {
-                    paintSign = 0;
-                    System.out.println("0");
-                }
-                repaint();
-            }
-
-        });*/
-
 
         playMusic.addMouseListener(new MouseAdapter() {
             @Override
@@ -177,24 +123,10 @@ public class JukeBoxUI extends JFrame {
                 try {
                     control.setUrl(urlInput);
 
-                    //Insert event-based animation here 1!!11!!1111
 
-
-                    //timer.setRepeats(false);
-                    //Note: including this here because using timer.stop after the for loop was not working. Maybe I need to use 5 .stops() because 5 timers are started?
                     Timer nu = new Timer();
                     MakeTask animateSign = new MakeTask();
                     nu.schedule(animateSign,0,1000);
-                    //nu.cancel();
-                    //nu.purge();
-
-                    /*
-                    for (int i = 0; i < 5; i++){
-                        timer.start();
-                        System.out.println("This is iteration " + i);
-
-                    }*/
-
                     /**NOTE: a for loop will not work because a timers timing is not influenced by the iterations of the for loop*/
                     //timer.stop() <-- save this for future editions
                     //Alternate algorithms: Use even/odd in for loop. Use alternate painting method. Use a while loop. Recursion? Timer with action listener. Timerhelper
@@ -202,7 +134,6 @@ public class JukeBoxUI extends JFrame {
                     ioException.printStackTrace();
                 }
 
-                //String youtubeUrl = urlInput.getText();
 
             }
         });
@@ -210,9 +141,6 @@ public class JukeBoxUI extends JFrame {
         setVisible(true);
     }
 
-    public void createCassetes(){
-
-    }
 
 
 
@@ -223,7 +151,7 @@ public class JukeBoxUI extends JFrame {
 
             //add draw image to paint
             g.drawImage(image,0, 0, null);
-            if (paintSign == 1){
+            if (paintSign == 1){ //Use 0101 pattern to render and erase the sign
             g.drawImage(doneSign, 50, 50, null);
             }
 
@@ -233,7 +161,7 @@ public class JukeBoxUI extends JFrame {
 
     /**NEED a new class to paint a different image because it must be it's own object */
 
-    public static void main(String args[]) { } //Dead code
+    public static void main(String args[]) { }
 
 
 }

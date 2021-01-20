@@ -12,7 +12,7 @@ public class JukeBoxControl {
     public JukeBoxControl() throws IOException {
 
         this.model = new JukeBoxModel();
-        this.view = new JukeBoxUI(this);
+        this.view = new JukeBoxUI(this); //standard MVC style
         view.setVisible(true);
 
 

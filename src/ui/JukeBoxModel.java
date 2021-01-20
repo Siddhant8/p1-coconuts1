@@ -8,7 +8,7 @@ public class JukeBoxModel {
 
     String youtubeUrl = "";
 
-    ArrayList<String> collectUrls = new ArrayList<String>();
+    ArrayList<String> collectUrls = new ArrayList<String>(); //this is the list of strings that will be used to create the buttons
 
     File storedUrls = new File("storedUrls.txt");
     //Remember to add the file type at the end!111!111!1111
@@ -17,9 +17,6 @@ public class JukeBoxModel {
     public void setUrl(String url) throws IOException {
         youtubeUrl = url;
         System.out.println("This is the gathered URL " + youtubeUrl);
-
-        //java.awt.Desktop.getDesktop().browse(java.net.URI.create(youtubeUrl));
-        //Open the youtube URL <-- add to later (in model section)
 
 
         if (!(storedUrls.exists())) {
@@ -30,7 +27,6 @@ public class JukeBoxModel {
 
         typer = new BufferedWriter(new FileWriter(storedUrls, true));
         //The true is for the append boolean. By setting it to true, we'll only ever append strings to new lines
-        /**ADD a control flow statement to prevent the addition of multiple URLS of the same thing**/
 
         arrangeUrls(); //<-- call arrangeURLs here so that the list collectUrls updates and we can know if the URL is in the txt file or not
         if (collectUrls.contains(youtubeUrl)){ //To prevent same thing from being added multiple times
@@ -60,9 +56,6 @@ public class JukeBoxModel {
         while ((currentLine = br.readLine()) != null) {
             collectUrls.add(currentLine);
         }//Fills out the array list
-
-
-        System.out.println("This is the list " + collectUrls);
 
     }
 }
