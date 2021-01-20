@@ -75,6 +75,7 @@ public class JukeBoxUI extends JFrame {
                     getContentPane().add(Cassetes.get(i)); //Displays the buttons
                     repaint();
                     System.out.println("Repainted");
+                    revalidate(); ///FIXED !11111!!! fixed the buttons not reappearing
                 }
 
 
