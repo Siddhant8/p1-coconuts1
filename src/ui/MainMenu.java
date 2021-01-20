@@ -20,18 +20,7 @@ public class MainMenu extends JFrame{
         menu.setBounds(100, 100, 418, 315);
         menu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         menu.setBackground(Color.red);
-        JButton covidButton = new JButton("Covid Calculator");
 
-        //Adds actionListeners to the buttons
-        covidButton.addMouseListener(new MouseAdapter(){
-            @Override
-            public void mousePressed(MouseEvent e){
-                CovidGraph graph = new CovidGraph();
-
-            }
-            public void mouseReleased(MouseEvent e){
-            }
-        });
         JButton jukeBox = new JButton("JukeBox");
         jukeBox.addMouseListener(new MouseAdapter() {
             @Override
@@ -68,18 +57,7 @@ public class MainMenu extends JFrame{
             }
         });
 
-        JButton teaShop = new JButton("Shopping");
-        teaShop.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mousePressed(MouseEvent e) {
-                TeaShop musicArea = new TeaShop();
-                //Add a feature that senses if a window has already been opened so that you don't open multiple
-            }
 
-            public void mouseReleased(MouseEvent e) {
-
-            }
-        });
 
         JLabel greeting = new JLabel("Welcome to Coconuts Tea Shop");
 
@@ -95,10 +73,6 @@ public class MainMenu extends JFrame{
 
         //adds the buttons to the UI
         content.add(jukeBox);
-
-        //content.add(teaShop);
-
-        //content.add(covidButton);
 
         content.add(calculator);
 
