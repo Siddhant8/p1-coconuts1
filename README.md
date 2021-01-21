@@ -20,6 +20,8 @@ This is a picture of what the MainMenu will look like:
 <img width="419" alt="Screen Shot 2021-01-14 at 8 03 36 PM" src="https://user-images.githubusercontent.com/71453341/104680054-dbaae480-56a3-11eb-9d47-16f67fc0edaa.png">
 
 ## How to Run the Coronavirus Calculator ## 
+### Video link explaining the MVC code behind the coronavirus calculator: https://user-images.githubusercontent.com/71453341/105275007-3ab0a380-5b53-11eb-82fe-ab606e96fb5c.mp4 ###
+
 ### Video link showing how to run the coronavirus calculator: https://user-images.githubusercontent.com/71453341/104786527-03508a00-5742-11eb-8882-17d6cf35892a.mp4 ###
 
 <img width="419" alt="Screen Shot 2021-01-14 at 8 05 03 PM" src="https://user-images.githubusercontent.com/71453341/104680504-e0bc6380-56a4-11eb-8cf4-79cdb2cee7d2.png">
