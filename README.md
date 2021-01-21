@@ -24,7 +24,7 @@ This is a picture of what the MainMenu will look like:
 ###
 Note: The files for the model and control are PracticeModel and PracticeControl, respectively.
 
-Key AP Unit Correlations: The getters and setters discussed are talked about in AP Unit 5, the initial instance variables in the model that setters and getters are used for are discussed in AP Unit 2, the use of constructors in the UI and Control code are discussed in AP Unit 2.
+Key AP Unit Correlations: The getters and setters discussed in the video in the Model code are talked about in AP Unit 5, the initial instance variables in the Model code for the number of people, people wearing masks, initial cases, and days passed are discussed in AP Unit 2. The setters and getters in the Model are specifically used for those instance variables. The use of constructors in the UI and Control code are discussed in AP Unit 2.
 
 ### Video link showing how to run the coronavirus calculator: https://user-images.githubusercontent.com/71453341/104786527-03508a00-5742-11eb-8882-17d6cf35892a.mp4 ###
 
