@@ -22,6 +22,7 @@ This is a picture of what the MainMenu will look like:
 ## How to Run the Coronavirus Calculator ## 
 ### Video link explaining the MVC code behind the coronavirus calculator: https://user-images.githubusercontent.com/71453341/105283575-9c7a0900-5b65-11eb-8acb-33c5f2be5d7e.mp4
 ###
+Note: The files for the model and control are PracticeModel and PracticeControl, respectively.
 
 ### Video link showing how to run the coronavirus calculator: https://user-images.githubusercontent.com/71453341/104786527-03508a00-5742-11eb-8882-17d6cf35892a.mp4 ###
 
