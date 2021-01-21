@@ -21,6 +21,8 @@ public class MainMenu extends JFrame{
         menu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         menu.setBackground(Color.red);
 
+        JLabel label = new JLabel("Remember to Social Distance");
+
         JButton jukeBox = new JButton("JukeBox");
         jukeBox.addMouseListener(new MouseAdapter() {
             @Override
@@ -77,6 +79,8 @@ public class MainMenu extends JFrame{
         content.add(calculator);
 
         content.add(greeting);
+
+        content.add(label);
 
 
         menu.setVisible(true);

@@ -12,6 +12,7 @@ public class PracticeModel {
     public int numMaskers = 0;
     public int numInitCases = 0;
     public int numDays = 0;
+
     public int casesToday = 0;
 
     public String numCase = "";
